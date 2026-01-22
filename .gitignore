@@ -3,6 +3,21 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# --- Build (fichiers générés par la compilation) ---
+[Bb]in/
+[Oo]bj/
+
+# --- IDE & Éditeurs (réglages perso de ton ordi) ---
+.vs/
+.vscode/
+*.user
+*.suo
+*.userprefs
+
+# --- Fichiers Système (Mac/Windows) ---
+.DS_Store
+Thumbs.db
+
 # User-specific files
 *.rsuser
 *.suo
