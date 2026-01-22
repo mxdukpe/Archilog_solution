@@ -1,0 +1,6 @@
+@archi.api_HostAddress = http://localhost:5210
+
+GET {{archi.api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

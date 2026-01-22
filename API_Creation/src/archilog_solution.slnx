@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="archi.api/archi.api.csproj" />
+  <Project Path="archi.library/archi.library.csproj" />
+</Solution>
