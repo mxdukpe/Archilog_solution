@@ -38,9 +38,9 @@ public class PizzaController : ControllerBase
     }
 
     // POST: api/Pizza
-    [HttpPost]
     public async Task<ActionResult<PizzaModel>> Post(PizzaModel pizza)
     {
+        pizza.CreationDate = DateTime.Now;
         _context.Pizzas.Add(pizza);
         await _context.SaveChangesAsync();
 

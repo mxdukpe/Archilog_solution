@@ -38,9 +38,9 @@ public class TacosController : ControllerBase
     }
 
     // POST: api/Tacos
-    [HttpPost]
     public async Task<ActionResult<TacosModel>> Post(TacosModel tacos)
     {
+        tacos.CreationDate = DateTime.Now;
         _context.Tacos.Add(tacos);
         await _context.SaveChangesAsync();
 

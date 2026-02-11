@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Archi.Library.Models
 {
-    public class PizzaModel
+    public class PizzaModel : BaseModel
     {
-        public int Id { get; set; }
+        // Id is inherited from BaseModel
 
         [Required(ErrorMessage = "{0} is required")]
         [MinLength(3, ErrorMessage = "{0} must be at least {1} characters long")]
