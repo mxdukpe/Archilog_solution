@@ -1,5 +1,6 @@
 
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Archi.Library.Models
 {
@@ -11,5 +12,10 @@ namespace Archi.Library.Models
         
         [DataType(DataType.DateTime)]
         public DateTime? CreationDate { get; set; }
+
+        [DataType(DataType.DateTime)]
+        public DateTime? UpdateDate { get; set; }
+
+        public bool IsDeleted { get; set; } = false;
     }
 }
